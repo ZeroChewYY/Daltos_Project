@@ -1,0 +1,33 @@
+{
+  "openapi" : "3.0.1",
+  "info" : {
+    "title" : "trial",
+    "description" : "No description",
+    "version" : "1.0.0"
+  },
+  "servers" : [ {
+    "url" : "/"
+  } ],
+  "paths" : {
+    "/trial" : {
+      "get" : {
+        "summary" : "trial",
+        "parameters" : [ {
+          "name" : "FirstName",
+          "in" : "query",
+          "required" : false,
+          "schema" : {
+            "type" : "string"
+          },
+          "style" : "form",
+          "explode" : true
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Status 200"
+          }
+        }
+      }
+    }
+  }
+}
